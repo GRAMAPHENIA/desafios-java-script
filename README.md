@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Proyecto de Desafíos Lógicos
 
-First, run the development server:
+Este proyecto tiene como objetivo proporcionar una plataforma para resolver desafíos de programación en JavaScript. Los usuarios pueden escribir su código, ejecutar pruebas y ver los resultados. Además, pueden obtener ayuda contextual para resolver los desafíos.
+
+## Tecnologías utilizadas
+
+- **Next.js**: Framework de React para el desarrollo de la aplicación.
+- **TypeScript**: Para garantizar un desarrollo más seguro y con tipado estático.
+- **Shadcn UI**: Librería de componentes UI de alta calidad.
+- **Lucide React**: Iconos interactivos utilizados en la interfaz.
+- **SyntaxHighlighter**: Para mostrar el código con resaltado de sintaxis.
+- **Tailwind CSS**: Framework para el diseño de la interfaz de usuario.
+
+## Estructura del Proyecto
+
+- **`components/`**: Contiene los componentes reutilizables como `ChallengeCard` y otros componentes de UI.
+- **`data/`**: Contiene los datos de los desafíos que los usuarios resolverán.
+- **`hooks/`**: Hooks personalizados como `use-toast` para mostrar notificaciones.
+- **`pages/`**: Contiene las páginas de la aplicación.
+- **`public/`**: Archivos públicos, como imágenes y fuentes.
+- **`styles/`**: Archivos CSS para personalizar el diseño de la aplicación.
+
+## Descripción de Funcionalidades
+
+### Desafíos Lógicos
+
+El usuario puede seleccionar un desafío de la lista, ver su descripción y escribir una solución en el área de texto proporcionada. Luego, puede ejecutar las pruebas, y el sistema verificará si la solución es correcta o no. Si la solución pasa todas las pruebas, se muestra un mensaje de éxito y el usuario avanza al siguiente desafío.
+
+### Progreso
+
+El progreso de los desafíos se visualiza en una barra de progreso. A medida que el usuario resuelve los desafíos, su progreso se actualiza. Al completar todos los desafíos, el sistema muestra un mensaje de felicitación.
+
+### Ayuda
+
+Cada desafío tiene una opción de ayuda donde el usuario puede obtener un consejo útil para resolver el desafío. Esto se puede activar o desactivar con un botón.
+
+## Instalación
+
+1. Clona este repositorio:
+
+```bash
+git clone https://github.com/tu-usuario/desafios-logicos.git
+```
+
+2. Instala las dependencias:
+
+```bash
+cd desafios-logicos
+npm install
+```
+
+3. Ejecuta la aplicación:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La aplicación estará disponible en `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contribuciones
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Si deseas contribuir a este proyecto, puedes hacer un fork del repositorio y enviar un pull request con tus cambios.
 
-## Learn More
+## Licencia
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
